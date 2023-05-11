@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    color: #2b0202;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    /* opacity: 0.5; */
+    /* background-color: azure; */
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li a {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10p;
+    font-family: 'Tilt Prism', cursive;
+    font-style: italic;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid grey;
+}
+.text{
+    color: red;
+    
+}
+.hero{
+    background-image: url('https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg');
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0.0.0.0.8);
+}
+.hero *{
+z-index: 10;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+}
+.content h1{
+    font-size: 20px;
+}
+.content p{
+    font-size: 15px;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+.button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: darkcyan;
+}
+.button:hover{    
+    opacity: 0.8;
+}
+/* About style */
+.about{
+    padding: 30px;
+}
+.about .flex-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.flex-items > div{
+    flex: 1;
+    flex-basis: 100%;
+}
+.flex-items i{
+    font-size: 30px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.flex-items div h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.flex-items div p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+body{
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(247, 13, 83);
+}
+a{
+    text-decoration:dotted;
+    color: rgb(241, 218, 25);
+
+}
+.flex-columns .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flex-columns .column{
+    flex: basis 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    width : 100%;
+    height : 100%;
+}
+.flex-columns img{
+    width: 100%;
+}
+.flex-columns .column-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.column-2 h4{
+    font-size: 20px;
+}
+.column-2 h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.column-2 p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgb(76, 8, 235);
+}
+.flex-columns .row.row-reverse{
+    flex-direction: row-reverse;
+}
+contact-form {
+    width: 100%;
+}
+.form-control {
+    margin: 10px 0;
+    margin-left: 2px;
+}
+.form-control label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+.form-control input {
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(71, 6, 248);
+    font-size: 16px;
+}
+
+.form-control input:focus {
+    border: 1px solid lightblue;
+}
+/* .btn-form { 
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}*/
+.btn{
+    /* padding: 10px 22px; */
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgb(76, 8, 235);
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #333;
+    color: #fff;
+}
+.footer i {
+    font-size: 25px;
+    margin: 0 10px;
+}
+.footer i:hover {
+    color: red;
+}
+.footer #copyright {
+    font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+    .flex-items {
+        flex-direction: column;
+    }
+    .flex-columns .row {
+        flex-direction: column;
+    }
+    .form-container h2 {
+        width: 100%;
+        text-align: center;
+    }   
+}
+/*.form-image{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: start;
+ } */
